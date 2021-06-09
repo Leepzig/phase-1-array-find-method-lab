@@ -6,9 +6,9 @@ const record = [
 
 
 
-
-let superbowlWin = (arr, index) => {
-  if (element.result === "W") {
-    return element.year
+const superbowlWin = (record) => {
+  let result = record.find(rec => rec.result === "W") 
+  if (result) {
+    return result.year
   }
 }
